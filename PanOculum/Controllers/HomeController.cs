@@ -26,5 +26,6 @@ namespace PanOculum.Controllers
 
             return View();
         }
+
     }
 }
