@@ -16,15 +16,7 @@ namespace PanOculum.Controllers
 
         public ActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Friday)
-            {
-                return Redirect("/");
-            }
-            else
-            {
-                return Content("Well hello there ");
-            }
-
+            return View();
             
         }
     }
