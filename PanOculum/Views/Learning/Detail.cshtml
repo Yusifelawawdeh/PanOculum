@@ -1,5 +1,9 @@
 ﻿@{
     Layout = null;
+
+    var learnWhat = "Asp.net MVC";
+    var learnWhen = "Learning it now";
+    var learnHow = "with treeHouse";
 }
 
 <!DOCTYPE html>
@@ -14,6 +18,19 @@
         <h1> 
             Hello from the Other side
         </h1>
+        <h2>
+            @learnWhat
+        </h2>
+        <div>
+            @Html.Raw(learnHow)
+        </div>
+        <h3>
+            @learnWhen
+        </h3>
+
+        <h4>
+            @learnHow
+        </h4>
     </div>
 </body>
 </html>
