@@ -1,9 +1,7 @@
 ﻿@{
     Layout = null;
 
-    var learnWhat = "Asp.net MVC";
-    var learnWhen = "Learning it now";
-    var learnHow = "with treeHouse";
+
 }
 
 <!DOCTYPE html>
@@ -19,18 +17,26 @@
             Hello from the Other side
         </h1>
         <h2>
-            @learnWhat
+            @ViewBag.LearnWhat
         </h2>
         <div>
-            @Html.Raw(learnHow)
+            @Html.Raw(ViewBag.LearnHow)
         </div>
         <h3>
-            @learnWhen
+            @ViewBag.LearnWhen
         </h3>
 
         <h4>
-            @learnHow
+            @ViewBag.LearnHow
         </h4>
+        <div>
+            <ul>
+                @foreach(var curriculums in ViewBag.Curriculum)
+                {
+                    <li>@curriculums</li>
+                }
+            </ul>
+        </div>
     </div>
 </body>
 </html>

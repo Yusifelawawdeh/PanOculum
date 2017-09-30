@@ -16,6 +16,18 @@ namespace PanOculum.Controllers
 
         public ActionResult Detail()
         {
+
+            ViewBag.LearnWhat = "Asp.net MVC";
+            ViewBag.LearnWhen = "Learning it now";
+            ViewBag.LearnHow = "with treeHouse";
+            ViewBag.Curriculum = new string[]
+                {
+                    "C#",
+                    "JavaScript",
+                    "Python",
+                    "SQL"
+                };
+
             return View();
             
         }
